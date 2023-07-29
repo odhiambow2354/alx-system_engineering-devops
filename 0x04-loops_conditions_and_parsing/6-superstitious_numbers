@@ -1,30 +1,30 @@
 #!/usr/bin/env bash
+# displays numbers from 1 to 20.
 
-# This script displays different messages for specific loop iterations
-
-# Initialize a counter variable
-count=1
-
-# Using a while loop to repeat the numbers from 1 to 20
-while [ $count -le 20 ]
+COUNTER=1
+while [ $COUNTER -lt 21 ]
 do
-    case $count in
+    case $COUNTER in
+
         4)
-            echo $count
-            echo "bad luck from China"
-            ;;
-        9)
-            echo $count
-            echo "bad luck from Japan"
-            ;;
-        17)
-            echo $count
-            echo "bad luck from Italy"
-            ;;
-        *)
-            echo $count
-            ;;
+	    echo $COUNTER
+	    echo "bad luck from China"
+	    ;;
+	
+	9)
+	    echo $COUNTER
+	    echo "bad luck from Japan"
+	    ;;
+	
+	17)
+	    echo $COUNTER
+	    echo "bad luck from Italy"
+	    ;;
+
+	*)
+	    echo $COUNTER
+	    ;;
     esac
 
-    ((count++))
+    let COUNTER+=1
 done
