@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Script that quickly displays listening ports and their associated programs.
+
+# Run netstat to get the list of listening sockets and their associated processes
+# The output directly shows the protocol, local address, local port, PID, and program name.
+netstat -lp
+
